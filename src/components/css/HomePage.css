@@ -1,0 +1,14 @@
+.main {
+    color: #8892B0;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.profile i {
+    font-size: 52px;
+}
