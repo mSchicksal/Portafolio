@@ -1,0 +1,17 @@
+.App {
+    background-color: #0A192F;
+}
+
+.navbar {
+    border-bottom: 0.5px solid #4BBEA9;
+    padding: 10px;
+    margin: 10px
+}
+
+.nav-link {
+    color: #8892B0 !important;
+    text-decoration: none;
+}
+.nav-link i {
+    color: #4BBEA9;
+}
