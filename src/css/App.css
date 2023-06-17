@@ -1,15 +1,22 @@
+:root {
+    --p-color: #8892B0;
+    --s-color: #4BBEA9;
+    --b-color: #0A192F;
+}
+
 .App {
-    background-color: #0A192F;
+    background-color: var(--b-color);
 }
 
 .flex-center {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
+    text-align: center !important;
 }
 
 .navbar {
-    border-bottom: 0.5px solid #4BBEA9;
+    border-bottom: 0.5px solid var(--s-color);
     padding: 10px;
     margin: 10px;
     display: flex !important;
@@ -23,16 +30,16 @@
     justify-content: center !important;
     align-items: center !important;
     text-align: center !important;
-    color: #8892B0 !important;
+    color: var(--p-color) !important;
     text-decoration: none !important;
     transition: .8s !important;
     font-size: 20px !important;
 }
 .nav-link a:hover {
-    color: #4BBEA9 !important;
+    color: var(--s-color) !important;
     transition: .8s;
 }
 .nav-link i {
-    color: #4BBEA9;
+    color: var(--s-color);
 
 }

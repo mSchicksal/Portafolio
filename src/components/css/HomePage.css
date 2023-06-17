@@ -1,12 +1,11 @@
 .main {
-    color: #8892B0;
+    color: var(--p-color);
 }
 
 .profile {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px;
 }
 
 .profile i {

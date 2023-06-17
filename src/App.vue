@@ -2,13 +2,16 @@
     <div class="container-fluid App">
         <div class="row navbar">
             <div class="col-1 nav-link">
-                <RouterLink to="/"><i class="bi bi-house"/>&nbsp;Home</RouterLink>
+                <RouterLink to="/" title="Home"><i class="bi bi-house"/></RouterLink>
             </div>
             <div class="col-1 nav-link">
-                <RouterLink to="/about"><i class="bi bi-question-square"/>&nbsp;About</RouterLink>
+                <RouterLink to="/about" title="About"><i class="bi bi-question-square"/></RouterLink>
             </div>
             <div class="col-1 nav-link">
-                <RouterLink to="/about"><i class="bi bi-person"/>&nbsp;Perfil</RouterLink>
+                <RouterLink to="/about" title="Perfil"><i class="bi bi-person"/></RouterLink>
+            </div>
+            <div class="col-1 nav-link">
+                <RouterLink to="/about" title="Perfil"><i class="bi bi-person"/></RouterLink>
             </div>
         </div>
         <RouterView></RouterView>
@@ -16,7 +19,15 @@
 </template>
 <script setup lang="ts">
     import { RouterLink, RouterView } from 'vue-router'
+    defineProps<{
+        theme?:boolean
+
+    }>()
+
+    function setTheme() {
+        console.log(theme)
+    }
 </script>
 <style>
-    @import './css/App.css'
+    @import './css/App.css';
 </style>
